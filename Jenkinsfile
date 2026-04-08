@@ -3,7 +3,15 @@ pipeline {
   stages {
     stage ('SCM') {
       steps {
-        echo "Source Code Management"
+        echo "Clonando repositório..."
+        git clone https://github.com/viniciusmorao-dev/app-teste.git
+      }
+    }
+
+    stage ('Build') {
+      steps {
+        echo "Building..."
+        uvicorn main:app --reload
       }
     }
   }
