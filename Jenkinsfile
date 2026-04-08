@@ -3,6 +3,7 @@ pipeline {
   stages {
     stage ('SCM') {
       steps {
+        sh 'rm -rf app-teste'
         echo "Clonando repositório..."
         sh 'git clone https://github.com/viniciusmorao-dev/app-teste.git'
       }
