@@ -3,8 +3,9 @@ pipeline {
   stages {
     stage ('SCM') {
       steps {
+        echo "Source Code Management"
         script {
-          sh 'echo teste'
+          
         }
       }
     }
