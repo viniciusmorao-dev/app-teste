@@ -10,6 +10,8 @@ pipeline {
 
     stage ('Build') {
       steps {
+        sh 'pip install fastapi uvicorn'
+
         echo "Building..."
         sh 'uvicorn main:app --reload'
       }
