@@ -4,7 +4,7 @@ pipeline {
     stage ('SCM') {
       steps {
         echo "Clonando repositório..."
-        git clone https://github.com/viniciusmorao-dev/app-teste.git
+        git clone "https://github.com/viniciusmorao-dev/app-teste.git"
       }
     }
 
