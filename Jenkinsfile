@@ -24,7 +24,7 @@ pipeline {
     stage ('Deploy Container') {
       steps {
         sh '''
-        docker run -d -p 8080:8080 --name api-teste-container $IMAGE_NAME
+        docker run -d -p 8081:8081 --name api-teste-container $IMAGE_NAME
         '''
       }
     }
